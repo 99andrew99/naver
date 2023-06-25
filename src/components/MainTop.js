@@ -7,7 +7,7 @@ const TopContainer = styled.div`
     width: 70vw;
     height:30vh;
     /* background-color: blue; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 `
 // 햄버거
@@ -25,7 +25,8 @@ const Hamburger = styled.div`
     height: 26px;
     position: relative;
     cursor: pointer;
-    
+    margin-top: 20px;
+
     &:hover::before {
         content: "";
         position: absolute;
@@ -34,7 +35,7 @@ const Hamburger = styled.div`
         transform: translate(-50%, -50%);
         width: 170%;
         height: 170%;
-        background-color: #F5F7F8;
+        background-color: rgba(0,0,0,0.05);
         border-radius: 50%;
         z-index: -1;
     }
@@ -292,8 +293,70 @@ const Etc = styled.div`
 const ThirdContainer = styled.div`
     width: 20vw;
     height: 20vh;
+    display: flex;
+    margin-left: 20px;
 `
 
+const AdImg = styled.img`
+    width: 220px;
+    height: 60px;
+    margin-top: 13%;
+    cursor: pointer;
+`
+
+const Pay = styled.div`
+    background-image: url("/images/logos.png");
+    background-size: 422px 405px;
+    background-position: -31px -316px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 26px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 170%;
+        height: 170%;
+        background-color: rgba(0,0,0,0.05);
+        border-radius: 50%;
+        z-index: -1;
+    }
+`
+
+const Alarm = styled.div`
+    background-image: url("/images/logos.png");
+    background-size: 422px 405px;
+    background-position: -364px -27px;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 170%;
+        height: 170%;
+        background-color: rgba(0,0,0,0.05);
+        border-radius: 50%;
+        z-index: -1;
+    }
+`
 
 function MainTop() {
 
@@ -367,7 +430,11 @@ function MainTop() {
                     
                 </BottomIconsContainer>
             </SecondContainer>
-            <ThirdContainer></ThirdContainer>
+            <ThirdContainer>
+                <AdImg src="https://s.pstatic.net/static/www/mobile/edit/20230612_1095/upload_16865444442429Q8YC.png"/>
+                <Pay />
+                <Alarm/>
+            </ThirdContainer>
         </TopContainer>
     );
 }

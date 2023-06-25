@@ -91,6 +91,7 @@ const ArrowImg = styled.div`
     width: 10px;
     height: 6px;
     margin-left: 10px;
+
 `
 
 const SearchImg = styled.div`
