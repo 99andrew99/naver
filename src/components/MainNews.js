@@ -19,7 +19,7 @@ const FirstContainer = styled.div`
 `;
 
 const FirstStrongText = styled.p`
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   font-weight: 600;
   cursor: pointer;
   &:hover {
@@ -53,6 +53,7 @@ const SecondContainer = styled.div`
 `;
 
 const SecodeNormalText = styled.p`
+  cursor: pointer;
   margin-left: 10px;
   &:hover {
     text-decoration: underline;
@@ -67,6 +68,7 @@ const slideUp = keyframes`
 `;
 
 const SecodeNormalAnimationText = styled.p`
+  cursor: pointer;
   margin-left: 10px;
   &:hover {
     text-decoration: underline;
@@ -90,6 +92,7 @@ const SecondLightIcon = styled.p`
   color: lightgray;
 `;
 const SecondStrongText = styled.p`
+  cursor: pointer;
   margin-left: 10px;
   font-weight: 600;
   margin-right: 10px;
