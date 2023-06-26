@@ -5,6 +5,7 @@ import MainTop from "./components/MainTop";
 import MainNews from "./components/MainNews";
 import Webtoon from "./components/Webtoon";
 import Login from "./components/Login";
+import Weather from "./components/Weather";
 
 const TopContainer = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
@@ -54,6 +55,7 @@ function App() {
 
         <SecondContainer>
           <Login />
+          <Weather />
         </SecondContainer>
       </MainContainer>
     </TopContainer>
