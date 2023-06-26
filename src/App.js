@@ -7,12 +7,14 @@ import Webtoon from "./components/Webtoon";
 import Login from "./components/Login";
 import Weather from "./components/Weather";
 import StockMarket from "./components/StockMarket";
+import Widget from "./components/Widget";
+import Footer from "./components/Footer";
 
 const TopContainer = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
     helvetica, "Apple SD Gothic Neo", sans-serif;
   width: 100%;
-  height: 250vh;
+  height: 230vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +27,7 @@ const HeaderContainer = styled.div`
 `;
 const MainContainer = styled.div`
   width: 70vw;
-  height: 200vh;
+  height: 190vh;
   display: flex;
   /* background-color: tomato; */
   /* background-color: #FEFEFE; */
@@ -58,8 +60,11 @@ function App() {
           <Login />
           <Weather />
           <StockMarket />
+          <Widget />
         </SecondContainer>
       </MainContainer>
+
+      <Footer />
     </TopContainer>
   );
 }

@@ -54,6 +54,7 @@ const FirstBoxIcon = styled.div`
 const FirstBoxText = styled.p`
   font-size: 0.6rem;
   color: gray;
+  margin-left: 3px;
 `;
 const FirstLightText = styled.p`
   font-size: 0.9rem;
