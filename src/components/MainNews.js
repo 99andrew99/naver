@@ -5,7 +5,7 @@ const TopContainer = styled.div`
   width: 100%;
   height: 46vh;
   border: 1px solid #e3e5e8;
-  border-radius: 2%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

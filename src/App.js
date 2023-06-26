@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import MainTop from "./components/MainTop";
 import MainNews from "./components/MainNews";
 import Webtoon from "./components/Webtoon";
+import Login from "./components/Login";
 
 const TopContainer = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
@@ -23,6 +24,7 @@ const HeaderContainer = styled.div`
 const MainContainer = styled.div`
   width: 70vw;
   height: 200vh;
+  display: flex;
   /* background-color: tomato; */
   /* background-color: #FEFEFE; */
 `;
@@ -32,7 +34,10 @@ const FirstContainer = styled.div`
 `;
 
 //second는 로그인, 날씨, 증시, 웨젯보드
-const SecondContainer = styled.div``;
+const SecondContainer = styled.div`
+  width: 30%;
+  margin-left: 30px;
+`;
 
 function App() {
   return (
@@ -46,6 +51,10 @@ function App() {
           <MainNews />
           <Webtoon />
         </FirstContainer>
+
+        <SecondContainer>
+          <Login />
+        </SecondContainer>
       </MainContainer>
     </TopContainer>
   );
